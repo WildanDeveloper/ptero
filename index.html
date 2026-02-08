@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Hosting WildanDev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --bg: #0b0b12;
+      --card: #141420;
+      --text: #eaeaf0;
+      --muted: #9a9ab0;
+      --neon: #9b5cff;
+      --border: rgba(155, 92, 255, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #141428, var(--bg));
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 520px;
+      width: 100%;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 0 40px rgba(155, 92, 255, 0.08);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 12px;
+      border-radius: 999px;
+      background: rgba(155, 92, 255, 0.15);
+      color: var(--neon);
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    p {
+      margin: 0 0 20px;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .info {
+      border-top: 1px dashed rgba(255,255,255,0.08);
+      margin-top: 20px;
+      padding-top: 16px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .info div {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .status {
+      color: #00ffaa;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 12px;
+      color: var(--muted);
+      opacity: 0.7;
+    }
+
+    footer span {
+      color: var(--neon);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="badge">SYSTEM MAINTENANCE</div>
+
+      <h1>Hosting sedang dalam perawatan</h1>
+
+      <p>
+        Kami sedang melakukan pemeliharaan sistem untuk peningkatan
+        performa, stabilitas, dan keamanan layanan.
+        Selama proses ini, akses Hosting sementara dinonaktifkan.
+      </p>
+
+      <div class="info">
+        <div>
+          <span>Status sistem</span>
+          <span class="status">Maintenance</span>
+        </div>
+        <div>
+          <span>Perkiraan selesai</span>
+          <span>Segera</span>
+        </div>
+           <div>
+          <span>Waktu Maintenance</span>
+          <span>05.18 WIB - Segera</span>
+        </div>
+           <div>
+          <span>Tanggal Maintenance</span>
+          <span>9 Februari 2026</span>
+           </div>
+        <div>
+          <span>Layanan</span>
+          <span>hosting.wildandev.tech</span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <span>WildanDev</span> — Hosting
+    </footer>
+  </div>
+</body>
+</html>
